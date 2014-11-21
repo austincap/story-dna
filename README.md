@@ -17,15 +17,15 @@ How it works: Provide some sort of rating (eg imdb) to go with each show's data.
 
 mastertropelistmaker.py
 
-Scrapes all of tvtropes.org for a list of every single trope. There are 25866. It's designed to let you scrape a little at a time, keyboard interrupting whenever you feel like. You could run this yourself but I'm also providing the mastertropelist.csv when I have it.
+Scrapes all of tvtropes.org for a list of every single trope. There are supposed to be 25866 but my tool consistently only finds 17183. It's designed to let you scrape a little at a time, keyboard interrupting whenever you feel like. You could run this yourself but I'm also providing the mastertropelist.csv
 
 findallworks.py
 
-Automatically produces a list of all links for a given medium. Ideally you'd run this before tlm.py but I still need a way to automatically scrape rating data.
+Automatically produces a list of all links for a given medium. Ideally you'd run this before tlm.py.
 
 tlm.py (trope list maker)
 
-Right now this takes a single work's page along with some sort of rating, scrapes the tropes from the page, and appends a new row to the "masterarraylist" containing the work's title, the binary tropelist array, the rating label, and the total number of tropes found.
+Right now this takes a single work's page along with some sort of rating, scrapes the tropes from the page, and appends a new row to the "masterarraylist" containing the work's title, the binary tropelist array, the rating label, and the total number of tropes found. Also contains a function to scrape imdb based off tvtropes titles.
 
 classifier.py
 
